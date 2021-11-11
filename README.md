@@ -2,7 +2,8 @@
 A companion bash program to aid and assist in running the joycontrol application.
 
 NOTE: This MUST be cloned within your home directory, found by typing the following command within a terminal in your VM
-cd ~
+
+* cd ~
 
 # Install Steps
 1) cd ~
