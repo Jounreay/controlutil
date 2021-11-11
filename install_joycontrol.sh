@@ -1,10 +1,13 @@
 #!/bin/bash
-if [ -d "~/joycontrol" ]; then
-  echo "Joy control is already cloned, there is no need to run"
+cd ~
+
+if [ -d "$(pwd)/joycontrol" ]; then
+  echo "Joy control is already cloned, there is no need to run, please run 'standalone_install_controlutil.sh' for the controlutil pre-installation command"
+  exit 1
+elif [ -d "$(pwd)/controlutil" ] || [ -z "$(grep "control()"  ~/.bash_aliases)" ]; then
+  echo "controlutil is already cloned, there is no need to run, please run 'standalone_install_controlutil.sh' for the controlutil pre-installation command"
   exit 1
 fi
-
-cd ~
 
 sudo apt update -qy
 
@@ -25,9 +28,6 @@ echo "control(){" >> ~/.bash_aliases
 echo "~/controlutil/control.sh \$@" >> ~/.bash_aliases
 echo "}" >> ~/.bash_aliases
 
-echo "Please type 'control -h' for all usages of app"
 source ~/.bashrc
+echo "Please type 'control -h' for all usages of app"
 
-cd ~/joycontrol
-
-control
