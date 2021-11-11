@@ -1,9 +1,12 @@
 # controlutil
 A companion bash program to aid and assist in running the joycontrol application.
 
-NOTE: This MUST be cloned within your home directory, found by typing the following command within a terminal in your VM
+IMPORTANT NOTE: This MUST be cloned within your home directory, found by typing the following command within a terminal in your VM.
 
 * cd ~
+
+ANOTHER IMPORTANT NOTE: Please CLONE this repo within your VM or preferred environment. Do not copy paste any of the script information as incompatible DOS lineendings or hidden characters could be added to the file. It makes troubleshooting a pain, and may partially install libraries without smoothly exiting the process.
+
 
 # Install Steps
 1) cd ~
