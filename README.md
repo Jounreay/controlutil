@@ -11,6 +11,6 @@ cd ~
 4) sudo controlutil/install_joycontrol.sh
 
 The steps above should 
-A) Install all of the necessary libraries to run the joycontrol application
-B) Add a shortcut to your .bash_aliases file, and reload your .bashrc for the control.sh file within the controlutil project.
-C) Trigger the control command within the script to test the bash program.
+1) Install all of the necessary libraries to run the joycontrol application
+2) Add a shortcut to your .bash_aliases file, and reload your .bashrc for the control.sh file within the controlutil project.
+3) Trigger the control command within the script to test the bash program.
